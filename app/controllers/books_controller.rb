@@ -19,7 +19,7 @@ class BooksController < ApplicationController
 
 
   def edit
-    @book = book.find(params[:id])
+    @book = Book.find(params[:id])
   end
   
   def update
