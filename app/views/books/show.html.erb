@@ -1,5 +1,12 @@
+
 <blockquote>
     
+<div>
+  <%= flash[:notice] %>
+</div>
+    
+<h1>Showing Book</h1>
+
 <p>
     <strong>Title:</strong>
 <%= @book.title %>
@@ -13,4 +20,5 @@
 <%= link_to"edit", edit_book_path(@book.id) %>
 ｜
 <%= link_to"back", "/books" %>
+
 </blockquote>
